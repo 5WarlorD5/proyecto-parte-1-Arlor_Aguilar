@@ -17,7 +17,7 @@ Este sistema está diseñado para agilizar el manejo de la tienda, asegurando qu
 
 El diagrama a continuación ilustra cómo están interrelacionadas las tablas dentro de la base de datos para gestionar eficientemente la información de la tienda.
 
-![Diagrama](./proyecto-parte-1-Arlor_Aguilar/assets/diagrama.png "Diagrama de la base de datos")
+![Diagrama](./assets/diagrama.png "Diagrama de la base de datos")
 
 ## Estructura de la Base de Datos
 
