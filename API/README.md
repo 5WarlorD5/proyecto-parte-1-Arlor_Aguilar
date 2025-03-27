@@ -1,7 +1,3 @@
-La ortografía en el documento es bastante clara y precisa, pero hay algunos pequeños detalles que podrían mejorarse para mantener la consistencia y precisión en la redacción. A continuación te dejo algunas sugerencias para mejorar la ortografía y el estilo:
-
----
-
 ## 📌 Documentación Completa de la API con URLs Absolutas
 
 ## Introducción
