@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /proyecto-parte-1-Arlor_Aguilar/API/public/
+
+# Si el archivo o directorio no existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirige todas las peticiones a index.php
+RewriteRule ^ index.php [QSA,L]

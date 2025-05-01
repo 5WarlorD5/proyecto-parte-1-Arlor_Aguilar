@@ -2,52 +2,80 @@
 
 ## Descripción del Proyecto
 
-Este proyecto tiene como objetivo la creación de una base de datos robusta para la gestión de una tienda de ropa. La base de datos tiene como principal función manejar las operaciones de ventas, gestión de prendas, marcas y clientes, lo cual facilita el control de inventarios y el seguimiento de las transacciones de la tienda.
+Este proyecto tiene como objetivo la creación de una base de datos robusta para la gestión de una tienda de ropa. La base de datos maneja operaciones de ventas, gestión de prendas, marcas y clientes, facilitando el control de inventarios y el seguimiento de las transacciones de la tienda.
 
-### Funcionalidades:
+### Funcionalidades
 
-- **Gestión de usuarios**: Administra tanto a empleados como a administradores de la tienda.
-- **Gestión de marcas y prendas**: Permite controlar el stock y los precios de las prendas de distintas marcas.
-- **Gestión de ventas**: Realiza el seguimiento de las ventas, clientes y productos vendidos.
-- **Consultas avanzadas**: Permite realizar consultas dinámicas sobre el estado de ventas, stock y marcas más vendidas.
+- **Gestión de usuarios**: Administra empleados y administradores de la tienda.
+- **Gestión de marcas y prendas**: Controla el stock y los precios de las prendas por marca.
+- **Gestión de ventas**: Permite registrar ventas, clientes y productos vendidos.
+- **Consultas avanzadas**: Ofrece información detallada sobre ventas, stock y marcas más vendidas.
 
-Este sistema está diseñado para agilizar el manejo de la tienda, asegurando que los datos sean fácilmente accesibles y manejables para mejorar la experiencia tanto de los clientes como del personal.
+Este sistema está diseñado para agilizar el manejo de la tienda y mejorar la experiencia tanto del personal como de los clientes.
 
 ## Diagrama de la Base de Datos
 
-El diagrama a continuación ilustra cómo están interrelacionadas las tablas dentro de la base de datos para gestionar eficientemente la información de la tienda.
+El siguiente diagrama ilustra cómo se relacionan las tablas de la base de datos:
 
 ![Diagrama](./assets/diagrama.png "Diagrama de la base de datos")
 
 ## Estructura de la Base de Datos
 
-La base de datos está compuesta por las siguientes tablas clave:
-
-- **Usuarios**: Almacena la información de empleados y administradores.
-- **Clientes**: Contiene datos de los clientes de la tienda.
-- **Marcas**: Registra las marcas de las prendas disponibles.
-- **Prendas**: Detalla la información sobre las prendas en stock.
-- **Ventas**: Almacena información sobre las transacciones realizadas.
-- **Detalle de Ventas**: Guarda el detalle de cada producto vendido en las ventas.
+- **Usuarios**: Información de empleados y administradores.
+- **Clientes**: Datos de los clientes registrados.
+- **Marcas**: Marcas disponibles en el inventario.
+- **Prendas**: Detalles de cada prenda (nombre, precio, stock, marca).
+- **Ventas**: Registro de transacciones realizadas.
+- **Detalle de Ventas**: Información detallada de los productos vendidos en cada venta.
 
 ## Consultas
 
-Algunas consultas útiles que se pueden ejecutar para obtener datos clave son:
+Consultas disponibles para obtener información clave:
 
-1. **Cantidad de prendas vendidas por fecha**: Consulta para conocer el volumen de ventas por día.
-2. **Marcas con ventas**: Consulta las marcas que han tenido ventas en la tienda.
-3. **Top 5 de marcas más vendidas**: Obtén las marcas con mayores ventas.
-4. **Prendas vendidas y stock restante**: Consulta el inventario de las prendas más vendidas y su disponibilidad actual.
+1. **Cantidad de prendas vendidas por fecha**
+2. **Marcas con ventas registradas**
+3. **Top 5 marcas más vendidas**
+4. **Prendas vendidas y su stock restante**
 
 ## Estructura del Repositorio
 
-Este repositorio contiene los siguientes archivos fundamentales:
+- **`crear_base_de_datos.sql`**: Crea la estructura principal de la base de datos.
+- **`insertar_datos.sql`**: Inserta datos de prueba.
+- **`consultas.sql`**: Consultas útiles para reportes y análisis.
+- **`vistas.sql`**: Vistas SQL para simplificar las consultas.
+- **`eliminar_actualizar_datos.sql`**: Elimina o actualiza registros según sea necesario.
 
-- **`crear_base_de_datos.sql`**: Script para crear la base de datos y sus tablas esenciales.
-- **`insertar_datos.sql`**: Script para insertar datos de ejemplo en las tablas.
-- **`consultas.sql`**: Incluye ejemplos de consultas que se pueden realizar en la base de datos.
-- **`vistas.sql`**: Script para crear las vistas necesarias para facilitar las consultas.
-- **`eliminar_actualizar_datos.sql`**: Script para eliminar o actualizar datos en las tablas cuando sea necesario.
+## Interfaz Web (Front-End)
+
+La aplicación incluye una interfaz web desarrollada con **HTML**, **CSS**, **JavaScript** y **Bootstrap 5**. Permite la gestión dinámica del sistema a través de una experiencia visual amigable.
+
+### Archivos principales
+
+- **`index.html`**: Estructura principal de la interfaz.
+  - Encabezado con botón para agregar prendas.
+  - Tablas dinámicas para:
+    - Listado de prendas.
+    - Prendas vendidas y stock restante.
+    - Marcas con ventas.
+    - Top 5 marcas más vendidas.
+  - Modal interactivo para agregar o editar prendas.
+
+- **`styles.css`**: Estilos personalizados para:
+  - Mejorar la presentación visual de tablas, botones y formularios.
+  - Aplicar diseño responsivo adaptable a dispositivos móviles.
+
+- **`script.js`**: Lógica de interacción del front-end.
+  - Obtiene y muestra los datos desde la API.
+  - Permite crear, editar o eliminar prendas.
+  - Detecta si una marca es nueva y la registra automáticamente.
+  - Recarga las tablas tras cada operación sin necesidad de recargar la página.
+
+### Características clave
+
+- Modal para edición/registro de prendas.
+- Autocompletado y registro de nuevas marcas desde el formulario.
+- Sincronización automática de la interfaz tras cualquier cambio.
+- Diseño limpio, responsivo y fácil de usar.
 
 ## Integrante del Proyecto
 
@@ -60,3 +88,5 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 1. Clona el repositorio en tu máquina local:
    ```bash
    git clone https://github.com/5WarlorD5/proyecto-parte-1-Arlor_Aguilar.git
+   ```
+
